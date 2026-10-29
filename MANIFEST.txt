@@ -1,0 +1,8 @@
+MAXX-AI-Frontend manifest
+MAXX-AI/README.md  2118 bytes
+MAXX-AI/assets/favicon.svg  513 bytes
+MAXX-AI/assets/maxx-logo.svg  787 bytes
+MAXX-AI/assets/maxx-mark.svg  600 bytes
+MAXX-AI/css/style.css  6443 bytes
+MAXX-AI/index.html  2341 bytes
+MAXX-AI/js/app.js  12115 bytes

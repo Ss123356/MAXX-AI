@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MAXX AI</title><link rel="icon" type="image/svg+xml" href="assets/favicon.svg"><link rel="stylesheet" href="css/style.css"></head>
+<body><div id="app">
+<aside id="sidebar" aria-label="Sidebar">
+  <div class="brand"><img class="logo-full" src="assets/maxx-logo.svg" alt="MAXX AI"><img class="logo-mark" src="assets/maxx-mark.svg" alt="MAXX AI"></div>
+  <button id="newChat" class="btn"><span>+</span><span class="lbl">New chat</span><kbd class="lbl">Ctrl+K</kbd></button>
+  <input id="search" class="lbl" type="search" placeholder="Search chats" aria-label="Search conversations">
+  <nav id="history" aria-label="Conversations"></nav>
+  <button id="openSettings" class="profile" aria-label="Open settings"><span class="avatar">M</span><span class="lbl">MAXX User</span></button>
+</aside>
+<div id="backdrop"></div>
+<main>
+  <header>
+    <button id="toggle" class="ib" aria-label="Toggle sidebar">&#9776;</button>
+    <h1 id="title">New chat</h1>
+    <select id="model" aria-label="Model"><option>MAXX Standard</option><option>MAXX Fast</option><option>MAXX Deep</option></select>
+    <button id="exportBtn" class="ib txt">Export</button><button id="clearAll" class="ib txt">Clear all</button>
+  </header>
+  <section id="messages" aria-live="polite"></section>
+  <footer>
+    <div id="chips"></div>
+    <div class="composer">
+      <button id="attach" class="ib" aria-label="Attach files">+</button><input id="file" type="file" multiple hidden>
+      <textarea id="input" rows="1" placeholder="Message MAXX AI" aria-label="Message"></textarea>
+      <button id="send" aria-label="Send message" disabled>&#8593;</button>
+    </div>
+    <p class="hint"><span class="demo">Demo mode — not connected to an AI service</span> Enter to send, Shift+Enter for a new line.</p>
+  </footer>
+</main>
+<dialog id="settings"><form method="dialog">
+  <img src="assets/maxx-logo.svg" alt="MAXX AI" class="about">
+  <p>MAXX AI frontend v1.0 — demo mode. Chats are saved in this browser only.</p>
+  <button type="button" id="clearAll2" class="btn">Clear all conversations</button> <button class="btn">Close</button>
+</form></dialog>
+<div id="toasts" role="status"></div></div>
+<script src="js/app.js"></script></body></html>
